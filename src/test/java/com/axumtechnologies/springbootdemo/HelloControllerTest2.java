@@ -22,14 +22,14 @@ public class HelloControllerTest2 {
 
 	@Test
 	public void getHello() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
+		mvc.perform(MockMvcRequestBuilders.get("/two").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
 				.andExpect(content().string(equalTo("Hello world Spring boot!")));
 	}
 
 
 	@Test
 	public void getHelloPage1() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/page1").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
+		mvc.perform(MockMvcRequestBuilders.get("/two/page1").accept(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
 				.andExpect(content().string(equalTo("Hello world Page1!")));
 	}
 

@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class HelloController2 {
 	
-	@RequestMapping("/")
+	@RequestMapping("/two")
 	public String index() {
 		return "Hello world Spring boot!";
 	}
 
-	@RequestMapping("/page1")
+	@RequestMapping("/two/page1")
 	public String page1() {
 		return "Hello world Page1!";
 	}
